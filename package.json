@@ -4,8 +4,12 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "@types/bootstrap": "^3.3.36",
+    "@types/sammy": "0.0.20",
+    "bootstrap": "^3.3.7",
     "express": "^4.15.5",
-    "openurl": "^1.1.1"
+    "openurl": "^1.1.1",
+    "sammy": "^0.7.6"
   },
   "devDependencies": {},
   "scripts": {

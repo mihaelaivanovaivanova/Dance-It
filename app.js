@@ -1,16 +1,16 @@
-var express = require('express');
-var app = express();
-var path = require('path');
+const express = require('express');
+const app = express();
+const path = require('path');
 
-// viewed at http://localhost:8080
+app.use(express.static(__dirname + '/public'));
+app.use('/libs', express.static(__dirname + '/node_modules'));
 
-const port = 8000;
-
-app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.listen(port, function () {
+const port = 8000;
+app.listen(port, function() {
     require('openurl').open(`http://localhost:${port}`);
     console.log('Server is running at port ' + port);
 });
