@@ -30,7 +30,6 @@ SystemJS.config({
         'post-controller': './../controllers/post-controller.js',
 
         'user-model': './../models/user-model.js',
-        'search-model': './../models/search-model.js',
         'group-model': './../models/group-model.js',
         'post-model': './../models/post-model.js',
     },

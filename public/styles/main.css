@@ -8,23 +8,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0202', end
 }
 
 @font-face{
-    font-family: 
-}
-
-header, ul, li, header a{
-    font-family: "Impact", "Charcoal", "sans-serif";
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-nav.navbar-default{
-    background: none;
-    border:none;
-}
-
-li.active a{
-    color: #DBBC8D !important;
-    background-color: transparent !important;
+    font-family: Header-main;
+    src: url('./../fonts/theleagueof-league-gothic-64c3ede/webfonts/leaguegothic-regular-webfont.woff');
 }
 
 .container{
@@ -67,7 +52,7 @@ li.active a{
     }
 }
 
-
+/* HEADERS + NAVIGATION */
 
 @media(max-width: 425px){
     img{
@@ -104,7 +89,22 @@ li.active a{
     }
 }
 
+header, ul, li, header a{
+    font-family: 'Header-main';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white !important;
+}
 
+nav.navbar-default{
+    background: none;
+    border:none;
+}
+
+li.active a{
+    color: #DBBC8D !important;
+    background-color: transparent !important;
+}
 
 header{
     padding-top:125px;
