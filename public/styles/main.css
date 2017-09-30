@@ -273,34 +273,59 @@ footer .accent{
     }
     .post-mini{
         width:210px;
+        height:345px;
+    }
+    h1.post-title{
+        font-size: 26px;
+    }
+    h3.post-subtitle{
+        font-size: 20px;
+    }
+    .post-text{
+        height:70px;
+        font-size:12px;
     }
 }
 
 @media(min-width: 425px){
-    img{
-        height: 40px;
-        width: 158px;
+    .main img{
+        width: 250px;
+        height: auto;
     }
-}
-
-@media(min-width: 768px){
-    img{
-        height: 60px;
-        width: 237px;
+    .post-mini{
+        width:260px;
+        height:405px;
     }
-}
-
-@media(min-width: 1024px){
-    img{
-        height: 80px;
-        width: 316px;
+    h1.post-title{
+        font-size: 28px;
+    }
+    h3.post-subtitle{
+        font-size: 22px;
+    }
+    .post-text{
+        height:85px;
+        font-size:12px;
     }
 }
 
 @media(min-width: 1200px){
-    img{
-        height: 100px;
-        width: 395px;
+    .main img{
+        width: 170px;
+        height: auto;
+    }
+    .post-mini{
+        width:180px;
+        height:370px;
+    }
+    h1.post-title{
+        font-size: 28px;
+    }
+    h3.post-subtitle{
+        font-size: 22px;
+    }
+    .post-text{
+        height:85px;
+        font-size:12px;
     }
 }
 
@@ -318,4 +343,40 @@ footer .accent{
 .post-mini{
     background: white;
     padding-top:5px;
+    margin-bottom:25px;
+}
+.post-content{
+    padding-left:15px;
+    padding-right: 15px;
+}
+.post-text{
+    color: #7A7A7A;
+    border-bottom: 5px;
+    overflow:hidden;
+    margin-bottom:10px;
+    
+}
+
+.post-title{
+    text-transform: uppercase;
+    color: #9A1C0D;
+    font-family: "Header-main";
+    margin-bottom:5px;
+}
+
+.post-subtitle{
+    font-family: "Header-main";
+    text-transform: uppercase;
+    margin-top:0;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #A4A4A4;
+}
+
+div.hatch{
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 10px;
+    background-image: linear-gradient(-45deg, #A4A4A4 25%, transparent 25%, transparent 50%, #A4A4A4 50%, transparent 75%, transparent);
+    background-size: 5px 5px;
 }
