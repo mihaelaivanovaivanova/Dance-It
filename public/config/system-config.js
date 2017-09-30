@@ -18,8 +18,8 @@ SystemJS.config({
         'firebase': './../lib/scripts/firebase.js',
         'firebase-config': './../config/firebase-config.js',
 
-        'movies-database': './../database/movies-database.js',
-        'firebase-database': './../database/firebase-database.js',
+        'danceit-database': './../database/danceit-database.js',
+        'firebase-danceit': './../database/firebase-danceit.js',
 
         'html-handler': './../views/helpers/html-handler.js',
         'template-handler': './../views/helpers/template-handler.js',

@@ -22,10 +22,10 @@ const router = (function() {
             this.post('#/user/register', userController.register);
             this.get('#/user/logout', userController.logout);
 
-            this.get('#user/profile/:id', userController.userProfile);
+            this.get('#user/profile/:id', userController.loadUserProfilePage);
 
             // Posts navigator
-            this.get('#/posts/details/:id', postController.loadPostDetailsPage);
+            this.get('#/posts/:id', postController.loadPostDetailsPage);
             this.get('#/posts/all', postController.loadFoundMoviesPage);
             
             this.get('#/posts/create', postController.loadCreatePostPage);
